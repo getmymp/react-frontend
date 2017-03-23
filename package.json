@@ -1,10 +1,10 @@
 {
-  "name": "my-mp",
+  "name": "get-my-mp",
   "version": "1.0.0",
-  "description": "my mp",
+  "description": "Frontend for Get My MP",
    "engines": {
-    "node": "4.4.3",
-    "npm": "3.9.2"
+    "node": "4.4.5",
+    "npm": "3.10.8"
   },
   "main": "index.js",
   "scripts": {
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lighthouse-labs/webpack-react-skeleton.git"
+    "url": "https://github.com/getmymp/react-frontend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lighthouse-labs/webpack-react-skeleton/issues"
+    "url": "https://github.com/getmymp/react-frontend/issues"
   },
-  "homepage": "https://github.com/lighthouse-labs/webpack-react-skeleton",
+  "homepage": "getmymp.github.io",
   "devDependencies": {
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",

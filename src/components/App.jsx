@@ -34,15 +34,16 @@ class App extends React.Component {
     }).fail(function(res){
     })
 
-    const componentToRender = this.state.selectedMP
-    ? <SingleMpView
-        mp = {this.state.selectedMP}
-        data = { mps}
-      />
-    : <AllMpView
-        data = { shuffleArray(mps) }
-        onChange = { this._changeSelectedMp }
-    />
+    function getComponentToRender(element) {
+      if (element) {
+        return <SingleMpView mp={this.state.selectedMP} data={mps} />
+      } else {
+        return <AllMpView data={shuffleArray(mps)} onChange={this._changeSelectedMp} />
+      }
+    }
+
+    const componentToRender = getComponentToRender(this.state.selectedMP)
+
 
     return (
       <div>

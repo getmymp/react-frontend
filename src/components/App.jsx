@@ -1,12 +1,9 @@
 import React from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import MpFooter from './MpFooter.jsx';
-
 import SingleMpView from './SingleMpView.jsx';
-
 import AllMpView from './AllMpView.jsx';
-
-
 
 class App extends React.Component {
 
@@ -26,9 +23,7 @@ class App extends React.Component {
         return array;
     }
 
-
     var mps = []
-
     $.ajax({
       url: '//findmymp.herokuapp.com/members',
       dataType: "json",
@@ -38,9 +33,6 @@ class App extends React.Component {
       mps = res
     }).fail(function(res){
     })
-
-
-
 
     const componentToRender = this.state.selectedMP
     ? <SingleMpView
@@ -53,7 +45,6 @@ class App extends React.Component {
     />
 
     return (
-
       <div>
         <Navbar
           onChange = { this._changeSelectedMp }
@@ -62,17 +53,14 @@ class App extends React.Component {
         { componentToRender }
       </div>
     )
+
   }
 
   _changeSelectedMp = (mp) => {
-
     this.setState({
       selectedMP: mp
     })
   }
 
-
-
 }
-
 export default App;

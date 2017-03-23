@@ -46,13 +46,15 @@ class App extends React.Component {
 
 
     return (
-      <div>
-        <Navbar
-          onChange = { this._changeSelectedMp }
-        />
+      <Router>
+        <div>
+          <Navbar
+            onChange = { this._changeSelectedMp }
+          />
 
-        { componentToRender }
-      </div>
+          { componentToRender }
+        </div>
+      </Router>
     )
 
   }

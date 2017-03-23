@@ -1,0 +1,192 @@
+
+button {
+  border-radius: 0px;
+  padding:10px;
+  font-size:20px;
+  text-align:center;
+  width:250px;
+  background-color: white;
+  border-color:#333;
+  color:#666;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition:background-color .2s ease-in-out, color .2s ease-in-out;
+  &:hover {
+    background-color: #333;
+    color:white;
+  }
+  &:focus {
+   outline:0;
+  }
+}
+
+
+
+#mp-container {
+  display: flex;
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+
+  .mp-index {
+    padding-left: 3px;
+    position: relative;
+    top: -20px;
+  }
+  .image-crop {
+    border-bottom: 0;
+  }
+}
+
+.mp-index-tag {
+  position: absolute;
+  bottom: 0px;
+  width: 142px;
+  padding: 5px;
+  background-color: grey;
+  color: white;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: max-height .2s ease-in-out;
+}
+
+.mp-index-tag span:first-child {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.mp-index-tag span {
+  transition: visibility .2s ease-in-out;
+  visibility: hidden;
+}
+
+.mp-index-tag.lib {
+  background-color: rgba(237, 46, 56, 0.8);
+}
+
+.mp-index-tag.con {
+  background-color: rgba(0, 35, 149, 0.8);
+}
+
+.mp-index-tag.bloc {
+  background-color: rgba(0, 136, 206, 0.8);
+}
+
+.mp-index-tag.green {
+  background-color: rgba(66, 119, 48, 0.8);
+}
+
+.mp-index-tag.ndp {
+  background-color: rgba(255, 88, 0, 0.8);
+}
+
+
+
+.mp-hover + .mp-index-tag {
+    span {
+      display: block;
+    }
+}
+.mp-hover:hover + .mp-index-tag {
+    max-height:100px;
+    span {
+      visibility: visible;
+      display: block;
+    }
+}
+
+
+form {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items:stretch;
+  flex-direction: row;
+  input, button {
+    &:focus {
+      outline:0;
+    }
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  input {
+    flex-grow:1;
+    border:none;
+    border-bottom: 3px solid #333;
+  }
+  button {
+    flex-grow:0;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; 
+    border:0; 
+  }
+}
+
+
+
+
+.filter {
+  flex-grow:3;
+  padding:10px;
+  font-weight: bold;
+  font-size:14px;
+  color: white;
+  border:3px solid white;
+/*  width:300px;
+*/  text-transform: uppercase;
+
+}
+
+.filter.all {
+  flex-grow:1;
+
+  /*width:120px;*/
+  color:#333;
+
+}
+
+.mapboxgl-popup-close-button {
+      visibility: hidden;
+    }
+
+    .icon-spin5 {
+      display: inline-block;
+  margin-right:0;
+  margin-left:0;
+  height:20px;
+  width:20px;
+  position: relative;
+  -webkit-animation: load3 2s infinite linear;
+  animation: load3 2s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

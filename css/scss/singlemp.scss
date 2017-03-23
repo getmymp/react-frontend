@@ -1,0 +1,366 @@
+@import 'variables.scss';
+
+
+.filter.lib {
+  background-color:$libColour;
+}
+.filter.con {
+  background-color:$conColour;
+}
+.filter.ndp {
+  background-color:$ndpColour;
+}
+.filter.green {
+  background-color:$greenColour;
+}
+.filter.bloc {
+  background-color:$blocColour;
+}
+
+.image-crop.lib {
+  border-bottom: 10px solid $libColour;
+}
+.image-crop.con {
+  border-bottom: 10px solid $conColour;
+}
+.image-crop.ndp {
+  border-bottom: 10px solid $ndpColour;
+}
+.image-crop.green {
+  border-bottom: 10px solid $greenColour;
+}
+.image-crop.bloc {
+  border-bottom: 10px solid $blocColour;
+}
+
+.mp-lead {
+  line-height: 140%;
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  margin:0;
+  letter-spacing: -1.5px;
+
+}
+
+
+
+.underline.lib {
+  border-bottom: 3px solid $libColour;
+}
+.underline.con {
+  border-bottom: 3px solid $conColour;
+}
+.underline.ndp {
+  border-bottom: 3px solid $ndpColour;
+}
+.underline.bloc {
+  border-bottom: 3px solid $blocColour;
+}
+.underline.green {
+  border-bottom: 3px solid $greenColour;
+}
+
+.contact-foot {
+  text-transform: lowercase;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  background-color: #333;
+  bottom: 0px;
+  color: white;
+  padding:10px 0px;
+  font-size: 25px;
+  font-weight: bold;
+  .col-md-6:first-child {
+    border-right: 1px solid #666;
+
+  }
+
+  a {
+    transition: opacity .3s ease-in-out;
+    color:white;
+    &:hover {
+      color:white;
+      opacity: .7;
+      text-decoration: none;
+    };
+  }
+}
+
+
+.address {
+  span {
+    display: block;
+  }
+}
+
+
+
+
+
+.mp-index-tag {
+  position: absolute;
+  bottom: 0px;
+  width:142px;
+  padding: 5px;
+  background-color:grey;
+  color: white;
+  font-size: 12px;
+  max-height: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: max-height .2s ease-in-out;
+  span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  span {
+    transition: visibility .2s ease-in-out;
+    visibility: hidden;
+  }
+}
+
+.mp-index-tag.lib {
+  background-color: rgba( $libColour, .8 )
+}
+.mp-index-tag.con {
+  background-color: rgba( $conColour, .8 )
+
+}
+.mp-index-tag.bloc {
+  background-color: rgba( $blocColour, .8 )
+
+}
+.mp-index-tag.green {
+  background-color: rgba( $greenColour, .8 )
+
+}
+.mp-index-tag.ndp {
+  background-color: rgba( $ndpColour, .8 )
+}
+
+.contact-foot {
+  display: flex;
+  flex-direction:row;
+  justify-contents: center;
+  div {
+    width: 50%;
+  }
+  div:first-child {
+    border-right: 1px solid #666;
+  }
+}
+
+.row-container.mp-head {
+  align-items:center;
+  .row-item:last-child {
+    width: 75%;
+  }
+}
+.score-circle {
+  margin:auto
+}
+
+.score-desc {
+  display:block;
+  font-weight:normal;
+}
+.score {
+  text-align: center;
+  color:#333;
+  font-weight:bold;
+  width:205px;
+position:relative;
+  .score-num {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 40px;
+  }
+  .score-num.one{
+    color: #EA222D;
+   
+  }
+
+  .score-num.two{
+    color: #EA222D;
+
+  }
+
+  .score-num.three{
+    color: #CA382B;
+
+  }
+
+  .score-num.four{
+    color: #B9462A;
+
+  }
+
+
+  .score-num.five{
+    color: #A75429;
+
+  }
+
+  .score-num.six{
+    color: #995F29;
+
+  }
+
+  .score-num.seven{
+    color: #837029;
+
+  }
+
+  .score-num.eight{
+    color: #737E29;
+
+  }
+
+  .score-num.nine{
+    color: #648A2A;
+
+
+  }
+
+  .score-num.ten{
+    color: #53992B;
+    left: 31%;
+
+  }
+
+  .score-num.ten{
+    color: #53992B;
+    left: 31%;
+
+  }
+
+  .score-num.cross{
+    color: #EA222D;
+    left: 40%;
+  }
+
+  .score-num.check{
+    color: #53992B;
+    left: 40%;
+  }
+}
+
+
+
+.mp-column {
+  width:30%;   
+}
+
+svg {
+  height: 120px;
+  width: 120px;
+}
+circle {
+  stroke-width: 4px;
+  fill: transparent;
+}
+#gray{
+  stroke: #AAA;
+}
+
+#cross {
+  stroke: #EA222D;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 240; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */  
+}
+
+#check {
+  stroke: #53992B;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#one{
+  stroke: #EA222D;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 240; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+
+
+#two{
+  stroke: #EA222D;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 192; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#three{
+  stroke: #CA382B;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 168; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#four{
+  stroke: #B9462A;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 144; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+
+#five{
+  stroke: #A75429;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 120; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#six{
+  stroke: #995F29;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 96; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#seven{
+  stroke: #837029;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 72; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#eight{
+  stroke: #737E29;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 48; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+#nine{
+  stroke: #648A2A;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 24; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+
+}
+
+#ten{
+  stroke: #53992B;
+  fill:#eeeeed;
+  stroke-dasharray: 284, 284; /* length of arc, circumference of circle */
+  stroke-dashoffset: 0; /* offset of arc from start point (1/2 arc length + 1/4 circumference (71) ) */
+}
+
+.spons-bill .line:nth-child(1) {
+  font-weight:bold;
+  font-size:20px;
+}
+.spons-bill .line:nth-child(2) {
+  font-size:12px;
+}
+.spons-bill .line:last-child {
+  padding-top:10px;
+}

@@ -2,7 +2,7 @@
   "name": "get-my-mp",
   "version": "1.0.0",
   "description": "Frontend for Get My MP",
-   "engines": {
+  "engines": {
     "node": "4.4.5",
     "npm": "3.10.8"
   },
@@ -47,6 +47,7 @@
     "lodash": "^4.13.1",
     "r-dom": "^2.2.2",
     "react-map-gl": "^0.6.9",
+    "react-router": "^4.0.0",
     "react-tooltip": "^2.0.2"
   }
 }

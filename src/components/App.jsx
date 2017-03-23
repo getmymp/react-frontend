@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import MpFooter from './MpFooter.jsx';
-import SingleMpView from './SingleMpView.jsx';
+import SingleMpViewCopy from './SingleMpViewCopy.jsx';
 import AllMpView from './AllMpView.jsx';
 
 class App extends React.Component {
@@ -36,7 +36,7 @@ class App extends React.Component {
 
     function getComponentToRender(element) {
       if (element) {
-        return <SingleMpView mp={this.state.selectedMP} data={mps} />
+        return <SingleMpViewCopy />
       } else {
         return <AllMpView data={shuffleArray(mps)} onChange={this._changeSelectedMp} />
       }
